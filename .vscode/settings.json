@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "[racket]": {
+        "editor.rulers": [
+            102
+        ],
+        "editor.wordSeparators": "()[]{}\",'`;#|",
+        "editor.defaultFormatter": "evzen-wybitul.magic-racket",
+        "editor.formatOnSave": true
+    }
+}
