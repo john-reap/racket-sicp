@@ -1,20 +1,7 @@
 #lang racket
 
-
 (define (sqrt x)
   (sqrt-iter 1.0 x)
-  )
-
-(define (sqrt2 x)
-  (sqrt-iter-use-newif 1.0 x)
-  )
-
-
-(define (new-if predicate then-clause else-clause)
-  (cond
-    (predicate then-clause)
-    (else else-clause)
-    )
   )
 
 (define (sqrt-iter guess x)
@@ -24,15 +11,6 @@
                  x
                  )
       )
-  )
-
-(define (sqrt-iter-use-newif guess x)
-  (
-   new-if
-   (good-enough? guess x)
-   guess
-   (sqrt-iter-use-newif (improve guess x)x)
-   )
   )
 
 (define (improve guess x)
@@ -53,5 +31,5 @@
   (* x x)
   )
 
-(sqrt 2)
-(sqrt2 2)
+(sqrt 0.001234)
+(sqrt 999999)
